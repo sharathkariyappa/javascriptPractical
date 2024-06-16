@@ -60,7 +60,50 @@ function simple(username = "may") {                                     // if we
     }
     return `${username} just logged in`
 }
-console.log(simple("mom")); 
+// console.log(simple("mom")); 
+
+// some more types of passing arguments 
+
+// function calculatePrice(num1) {
+//     return num1
+// }
+// console.log(calculatePrice(4,100,4000));                            //suppose we have passed 4 or more arguemnts it returns only 1 
+
+// function calculatePrice(...num1) {                                      // here we used rest operator to manage arguments
+//     return num1
+// }
+// console.log(calculatePrice(4,100,4000,200,900))                                    //converts to an array
+
+// function calculatePrice(value1, value2, ...num1) {                         // here we used rest operator to manage arguments  value 1 and 2 
+//     return num1                                                            // stores 1st and 2nd times
+// }
+// console.log(calculatePrice(4,100,4000,200,900)) 
 
 
+// objects in function
 
+// const user = {
+//     id: 123,
+//     email: "shaddy@google.com"
+// }
+
+function userDetails(anyobject) {
+    return `the id is ${anyobject.id} and email is ${anyobject.email}`
+}
+// console.log(userDetails(user));                                  // simple type to passing argument 
+console.log(userDetails({                                           // without the creating an object we cn pass directly an an argument
+    id: 3,
+    email: "shanua@gmail"
+}))
+
+
+// array as function
+
+// const array = [100,400,500,800];                                   //creating an arrrya
+
+function getArray(getnum){
+    return getnum[2]
+}
+// console.log(getArray(array));                                       //passing an array
+
+console.log(getArray([200,300,500,1000]));                         // directly passs=ing an array as an argument
