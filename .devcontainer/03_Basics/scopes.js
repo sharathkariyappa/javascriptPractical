@@ -16,13 +16,39 @@
 // }
 
 
-function addone(num) {
-    let res = num + 1;
+// function addone(num) {
+//     let res = num + 1;
 
-    function addtwo(num) {
-        let sum = num + res;                                           // block scope can get values from the global scope 
-        console.log(sum);                                              // it execute the code line by line
-    }
-    addtwo(5)
+//     function addtwo(num) {
+//         let sum = num + res;                                           // block scope can get values from the global scope 
+//         console.log(sum);                                              // it execute the code line by line
+//     }
+//     addtwo(5)
+// }
+// addone(10)
+
+//***************************************************** part-2********************************************** */
+
+// function sum(num) {
+//     console.log(num + 1);
+// }
+// sum(4);                                                             // argument is passed after the function it will work well
+
+// const sub = function (num) {
+//     console.log(num + 4)
+// }
+// sub(5);                                                            // argument is passed after the function it will work well
+
+
+
+// sum(4);                                                             // if we declare arguement before thr function it also work well  
+function sum(num) {
+    console.log(num + 1);                                           // beacsue it is simple function without the variable to hold
 }
-addone(10)
+
+
+sub(5);                                                             // if we declare argumet before function in variable holding function it 
+const sub = function (num) {
+    console.log(num + 4)                                            // gives an error  due to hoisting(can not access before initialization)
+}
+sub(5);  
