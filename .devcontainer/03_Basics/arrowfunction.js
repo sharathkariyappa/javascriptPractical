@@ -37,5 +37,24 @@ const user = {
 // }
 // console.log(addsum(4,7));
 
-const addsum =(num1,num2)=>  num1 + num2                                       //simplest form of declaring the arraow functon
-console.log(addsum(4,7));
+// const addsum =(num1,num2)=>  num1 + num2                                       //simplest form of declaring the arraow functon
+// console.log(addsum(4,7));
+
+
+//******************************************************8 part-2 ************************************************/
+
+// IIFE(immediatly invoked function expressions)
+
+// function gandu() {                                                              // simple type of function
+//     console.log(`welcome to mars`)                                              // IIFE used to clean the global scope wastes
+// }
+// gandu()
+
+(function gandu() {                                                              //this is IIFE type declaration of function
+    console.log(`welcome to mars`);
+}) ();
+
+
+( (name) => {
+    console.log(`DB connected, ${name}`);
+}) ("madman")
