@@ -18,13 +18,26 @@
 
 // 2 switch loop
 
-const score = 100;
-switch (score) {
-    case 1:
-        console.log("score is not one")
-        break;
-    case 100:
-        console.log("score is 100")
-    default:
-        break;
-}
+// const score = 100;
+// switch (score) {
+//     case 1:
+//         console.log("score is not one")
+//         break;
+//     case 100:
+//         console.log("score is 100")
+//     default:
+//         break;
+// }
+
+// 3 truthy and falsy values
+
+//falsy values 
+// Nan , undefined, null, 0, false, -0, bigint 0n
+
+// truthy values
+// all values except falsy values are truthy
+
+
+const val1 = null ?? 10
+const val2 = 10 ?? 20
+console.log(val2)
