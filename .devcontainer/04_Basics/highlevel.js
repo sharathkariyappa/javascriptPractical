@@ -52,3 +52,19 @@
 //    console.log(greetings[words]);                                             // gives the output
 // }
 
+// maps
+
+const map = new Map()                                                          //map is an object like object it store only uniques values & keys
+map.set("In","india")
+map.set("usa","america")
+map.set("rs","russia")
+map.set("jap","japan")
+// console.log(map);
+
+for (const key of map) {                                                //for of loop used in map and it gets values
+    // console.log(key);
+}
+
+for (const key in map) {                                                  // for in loop dont respond on for in loop 
+    // console.log(key);
+}
