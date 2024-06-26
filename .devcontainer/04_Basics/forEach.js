@@ -8,5 +8,12 @@ myArray.forEach( function (items) {                                             
 
 
 myArray.forEach( (items)=>{                                                        // this is arrow function
-    console.log(items)
+    // console.log(items)
 })
+
+// declare an seperate function
+
+function printme(items) {                                           // if we declare seperate function then also we can use that in forEach loop 
+    console.log(items);                                             // we can get an same output
+}
+myArray.forEach(printme)
