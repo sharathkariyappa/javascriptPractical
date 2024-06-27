@@ -35,4 +35,45 @@ myNums.forEach( (nums) => {
     if(nums > 5)                                            // apply condition inside 
         mynewNum.push(nums)                                 // push values to empty array
 })
-console.log(mynewNum)                                        // this is more complex than the filter function
+// console.log(mynewNum)                                        // this is more complex than the filter function
+
+
+// ******************************************************2nd part *******************************************************//
+
+
+// lets take an example to array of object
+
+const books = [
+    {
+        title: "book-one", genre: "fiction", publish: 1981, edition: 2004
+    },
+    {
+        title: "book-two", genre: "non-fiction", publish: 1992, edition: 2008
+    },
+    {
+        title: "book-three", genre: "history", publish: 1999, edition: 2007
+    },
+    {
+        title: "book-four", genre: "non-fiction", publish: 1989, edition: 2010
+    },
+    {
+        title: "book-five", genre: "science", publish: 2009, edition: 2014
+    },
+    {
+        title: "book-six", genre: "fiction", publish: 1987, edition: 2010
+    },
+    {
+        title: "book-seven", genre: "history", publish: 1986, edition: 1996
+    },
+]
+
+// let newbooks = books.filter( (bk) => {                        // we can easily fetch the object  values form the array of objects
+//     return bk.genre =="history"
+// })
+// console.log(newbooks)
+
+const newbooks = books.filter( (bk) => {                        // we can easily fetch the object  values form the array of objects
+    return bk.genre =="history" && bk.publish ==1999
+})
+console.log(newbooks)
+
