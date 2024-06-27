@@ -11,7 +11,7 @@
 // })
 // console.log(prog);                                                 // if we console this we get an undefined, to tackle this we use filter
 
-// filter.//
+// filter.// easy  to use
 
 // const prog = coding.filter( (items) => {return items})    // here we declare variable to store result. // if we use parenthesis we must use return
 // console.log(prog)                                                      // returns the values in array
@@ -27,3 +27,12 @@ let newNums = myNums.filter( (num) => {                       // use return insi
 
 newNums = myNums.filter( (num) => num > 5 )                 // here not used braces so didnt used return keyword
 // console.log(newNums)
+
+// alternate of filter, if we use for each to get same results
+
+const mynewNum = []                                         // 1st we declare empty array
+myNums.forEach( (nums) => {
+    if(nums > 5)                                            // apply condition inside 
+        mynewNum.push(nums)                                 // push values to empty array
+})
+console.log(mynewNum)                                        // this is more complex than the filter function
