@@ -25,5 +25,25 @@
         document.querySelector('.language').appendChild(li)
     }
     addoptional("HTML")
+
+    // edit
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    secondLang.innerHTML = "mojo"
+
+    const newLi = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replaceWith(newLi)
+
+    const error = document.querySelector('li:first-child')
+    const elli = document.createElement('li')
+    elli.textContent = "tiktok"
+    error.replaceWith(elli)
+
+    //remove
+
+    const lastLnag = document.querySelector('li:last-child')
+    lastLnag.remove()
+
 </script>
 </html>
